@@ -6,10 +6,12 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* scroll behavior để nó cuộn lên cuộn xuống khi nhấn vào nút */
 }
 .header{
     height: 70px;
-    background-color: brown;
+    background-color: blue;
     /* xét chiều cao cho thẻ header */
     position: fixed;
     top: 0;
@@ -84,7 +86,7 @@ display: block;
  }
  .footer{
      height: 100px;
-     background-color: rgb(220, 127, 20);
+     background-color: blue;
      position: relative;
  }
  .footer .iconfooter{
