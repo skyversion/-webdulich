@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* đoạn này để réset toàn bộ thẻ */
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* scroll behavior để nó cuộn lên cuộn xuống khi nhấn vào nút */
+}
+body{
+    /* background-color: rgb(red, green, blue); */
+}
+.header{
+    height: 70px;
+    background-color: rgb(22, 22, 41);
+    /* xét chiều cao cho thẻ header */
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    /* cho cai right 0 để chỉnh cái position fixed */
+    z-index: 1;
+}
+.header.nav{
+  display: inline-block;
+  /* height: 100%; */
+}
+.header .nav .nalist{
+ 
+}
+.nav .nalist .listitem:hover{
+    background-color: #ccc;
+    cursor: pointer;
+    /* chô nay cusor có tác dung thay đôi con trỏ khi nhấn chuot vao */
+}
+.nav .nalist .listitem{
+    display: inline-block;
+    
+}
+.listitem .link{
+line-height: 70px;
+/*  căn giữa của chữ  trong thẻ a */
+padding: 0 40px;
+/* padding cho thẻ a */
+display: block;
+ color: white;
+}
+.slider{
+    height: 700px;
+    background-image:url(../assets/Image/halong-3_pids.jpg) ;
+    background-size: cover;
+    position: relative;
+}
+ .slider .textslider {
+     position: absolute;
+     /* dung vị trí này để cho cái chữ thẻ con đè  lên ảnh image */
+     bottom: 0;
+     
+     /*  2 cái này dùng để căn giữa */
+     width: 100%;
+     text-align: center;
+ }
+ .textslider .text {
+     font-size: 58px;
+     padding: 24px;
+ }
+ .content{
+     background-color: salmon;
+    /* width: 1000px; */
+  padding: 0 15px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  /* căn giữa chữ với magin 2 bên 1 đoạn auto là nó tự căn thẻ gia giữa */
+  
+ }
+ .content .heading .textheading{
+     padding: 24px ;
+ }
+ 
+.contentover{
+    background-color: saddlebrown;
+}
+ 
+ .contentover .paddingunline{
+     margin-top: 15px;
+ }
+ .contentover img{
+     margin-top: 15px;
+ }
+ .footer{
+     height: 100px;
+     background-color:rgb(26, 11, 11);
+     position: relative;
+ }
+ .footer .iconfooter{
+position: absolute;
+text-align: center;
+ left: 0;
+ right: 0;
+ top: 12px;
+ }
+ .iconfooter .icon{
+     color: blanchedalmond;
+ }
